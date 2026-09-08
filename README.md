@@ -22,8 +22,4 @@ If you are developing a production application, we recommend using TypeScript wi
 
 <p align="center">
   Your Beauty, Your Confidence
-</p>                                                                                                        ## Features
-
-- Home page
-- Products page
-- Add to Cart                                                                                                      
+</p>                                                                                                                    
