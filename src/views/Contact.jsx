@@ -68,55 +68,53 @@ function Contact({ showToast }) {
             <MessageCircle size={32} />
             <h3>WhatsApp</h3>
             <p>+91 7249837400</p>
-            <span className="contact-link">Chat With Us</span></a>
+            <span className="contact-link">Chat With Us </span> </a>
         </div>
       </div>
+
       <div className="contact-main">
         <div className="support-section">
           <h2>Customer Support</h2>
-          <p>  Our customer support team is available to help you with product information, orders and general questions. </p>
-          <a href="mailto:priyankakhedkar.c21@gmail.com" className="support-item support-clickable" >
+          <p> Our customer support team is available to help you with product information, orders and general questions. </p>
+          <a  href="mailto:priyankakhedkar.c21@gmail.com" className="support-item support-clickable" >
             <Mail size={24} />
             <div>
               <h3>Email Support</h3>
-              <p>  priyankakhedkar.c21@gmail.com </p>
-              <p> For product and order related questions </p>
+              <p>   priyankakhedkar.c21@gmail.com</p>
+              <p>    For product and order related questions.  </p>
             </div> </a>
-          <a href="tel:+917249837400"  className="support-item support-clickable" >
+          <a  href="tel:+917249837400"   className="support-item support-clickable" >
             <Phone size={24} />
             <div>
               <h3>Call Support</h3>
               <p>+91 7249837400</p>
-              <p>Available during working hours. </p>
-            </div> </a>
+              <p>  Available during working hours.</p>
+            </div></a>
           <div className="social-section">
             <h3>Follow Beauty Bliss</h3>
-            <p> Follow us for new products, beauty tips and special offers. </p>
+            <p>  Follow us for new products, beauty tips and special offers.</p>
             <div className="contact-social">
-              <a href="https://www.instagram.com/priyanka_k_10" target="_blank"  rel="noopener noreferrer"  title="Instagram">
-                <Camera size={22} />  </a>
-              <a href="https://wa.me/917249837400" target="_blank" rel="noopener noreferrer" title="WhatsApp"   >
-                <MessageCircle size={22} /> </a>
-              <a href="mailto:priyankakhedkar.c21@gmail.com"
-                title="Email" >
-                <Mail size={22} /></a>
+              <a href="https://www.instagram.com/priyanka_k_10" target="_blank"  rel="noopener noreferrer"  title="Instagram" >  <Camera size={22} /> </a>
+              <a href="https://wa.me/917249837400" target="_blank" rel="noopener noreferrer" title="WhatsApp" >
+                <MessageCircle size={22} /></a>
+              <a  href="mailto:priyankakhedkar.c21@gmail.com" title="Email" >
+                <Mail size={22} /> </a>
             </div>
           </div>
         </div>
         <div className="contact-form-section">
           <h2>Send Us a Message</h2>
-          <p> Fill out the form below and we will get back to you as soon as possible.  </p>
+          <p>Fill out the form below and we will get back to you as soon as possible.   </p>
           <form onSubmit={handleSubmit}>
             <div className="form-row">
-              <input  type="text"  name="name"  placeholder="Enter your name" value={formData.name} onChange={handleChange}  required />
-              <input type="email"name="email" placeholder="Enter your email" value={formData.email} onChange={handleChange} required />
+              <input   type="text" name="name"  placeholder="Enter your name"value={formData.name}  onChange={handleChange}   required/>
+              <input type="email" name="email" placeholder="Enter your email" value={formData.email} onChange={handleChange} required />
             </div>
             <div className="form-row">
-              <input type="tel" name="phone" placeholder="Enter your phone number" value={formData.phone} onChange={handleChange} required/>
-              <input type="text" name="subject" placeholder="Enter subject" value={formData.subject}  onChange={handleChange} required  >
+              <input type="tel"  name="phone"  placeholder="Enter your phone number" value={formData.phone} onChange={handleChange} required />
+              <input type="text" name="subject" placeholder="Enter subject" value={formData.subject} onChange={handleChange} required />
             </div>
-            <textarea name="message"  placeholder="Enter your message" value={formData.message} onChange={handleChange}
-              required></textarea>
+            <textarea name="message"placeholder="Enter your message" value={formData.message} onChange={handleChange} required></textarea>
             <button type="submit"> <Send size={18} /> Send Message</button>
           </form>
         </div>
@@ -125,7 +123,6 @@ function Contact({ showToast }) {
         <h2>We Are Here To Help</h2>
         <p> Your satisfaction is important to us. Contact Beauty Bliss anytime during our working hours and our team will be happy to assist you. </p>
       </div>
-    </section>
-  );
+    </section> );
 }
 export default Contact;
