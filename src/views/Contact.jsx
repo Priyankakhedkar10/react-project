@@ -93,76 +93,29 @@ function Contact({ showToast }) {
             <h3>Follow Beauty Bliss</h3>
             <p> Follow us for new products, beauty tips and special offers. </p>
             <div className="contact-social">
-              <a href="https://www.instagram.com/priyanka_k_10"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Instagram">
-                <Camera size={22} />
-              </a>
-              <a
-                href="https://wa.me/917249837400"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="WhatsApp"
-              >
-                <MessageCircle size={22} />
-              </a>
+              <a href="https://www.instagram.com/priyanka_k_10" target="_blank"  rel="noopener noreferrer"  title="Instagram">
+                <Camera size={22} />  </a>
+              <a href="https://wa.me/917249837400" target="_blank" rel="noopener noreferrer" title="WhatsApp"   >
+                <MessageCircle size={22} /> </a>
               <a href="mailto:priyankakhedkar.c21@gmail.com"
                 title="Email" >
-                <Mail size={22} />
-              </a>
+                <Mail size={22} /></a>
             </div>
           </div>
         </div>
         <div className="contact-form-section">
           <h2>Send Us a Message</h2>
-          <p>
-            Fill out the form below and we will get back
-            to you as soon as possible.
-          </p>
+          <p> Fill out the form below and we will get back to you as soon as possible.  </p>
           <form onSubmit={handleSubmit}>
             <div className="form-row">
-              <input
-                type="text"
-                name="name"
-                placeholder="Enter your name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="Enter your email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-              />
+              <input  type="text"  name="name"  placeholder="Enter your name" value={formData.name} onChange={handleChange}  required />
+              <input type="email"name="email" placeholder="Enter your email" value={formData.email} onChange={handleChange} required />
             </div>
-
             <div className="form-row">
-              <input
-                type="tel"
-                name="phone"
-                placeholder="Enter your phone number"
-                value={formData.phone}
-                onChange={handleChange}
-                required
-              />
-              <input
-                type="text"
-                name="subject"
-                placeholder="Enter subject"
-                value={formData.subject}
-                onChange={handleChange}
-                required
-              />
+              <input type="tel" name="phone" placeholder="Enter your phone number" value={formData.phone} onChange={handleChange} required/>
+              <input type="text" name="subject" placeholder="Enter subject" value={formData.subject}  onChange={handleChange} required  >
             </div>
-            <textarea
-              name="message"
-              placeholder="Enter your message"
-              value={formData.message}
-              onChange={handleChange}
+            <textarea name="message"  placeholder="Enter your message" value={formData.message} onChange={handleChange}
               required></textarea>
             <button type="submit"> <Send size={18} /> Send Message</button>
           </form>
